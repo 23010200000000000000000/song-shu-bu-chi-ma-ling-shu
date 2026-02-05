@@ -1,0 +1,80 @@
+{
+  "language": {
+    "selectMode": "选择学习模式",
+    "monoMode": "单语模式",
+    "dualMode": "双语模式",
+    "selectLanguage": "选择语言",
+    "korean": "韩语",
+    "chinese": "汉语",
+    "english": "英语",
+    "japanese": "日语"
+  },
+  "ui": {
+    "appTitle": "档案推理馆",
+    "loading": "正在加载...",
+    "continue": "继续",
+    "save": "保存",
+    "load": "读取",
+    "settings": "设置",
+    "back": "返回",
+    "confirm": "确认",
+    "cancel": "取消",
+    "close": "关闭"
+  },
+  "menu": {
+    "subTitle": "档案推理馆",
+    "startMain": "开始归档",
+    "continue": "续案",
+    "startSide": "卷宗检索",
+    "settings": "馆规与设置",
+    "exit": "离馆",
+    "noSave": "尚无可续卷宗",
+    "motto": "万历朝堂，谜案重重",
+    "version": "Demo v1.0",
+    "hint": "按 Enter 或点击【开始归档】进入"
+  },
+  "actions": {
+    "investigate": "调查",
+    "talk": "交谈",
+    "think": "思考",
+    "examine": "审视",
+    "question": "质询",
+    "present": "呈递"
+  },
+  "system": {
+    "narrator": "旁白",
+    "player": "玩家",
+    "error": "错误",
+    "initFailed": "初始化失败，请刷新页面重试。",
+    "sceneLoadFailed": "场景加载失败。",
+    "noContent": "没有可用的故事内容。"
+  },
+  "permit": {
+    "apprentice": "见习译官",
+    "adept": "熟手译官",
+    "emissary": "密使译官",
+    "scribe": "执笔译官"
+  },
+  "placement": {
+    "title": "封签审读",
+    "description": "通过阅读与理解档案封签，评估您的语言能力",
+    "start": "开始评估"
+  },
+  "system.narrator": "system.narrator",
+  "menu.startSide": "menu.startSide",
+  "system.noContent": "system.noContent",
+  "ui.hint": "ui.hint",
+  "menu.settings": "menu.settings",
+  "language.selectLanguage": "language.selectLanguage",
+  "language.chinese": "language.chinese",
+  "language.english": "language.english",
+  "language.korean": "language.korean",
+  "ui.close": "ui.close",
+  "menu.subTitle": "menu.subTitle",
+  "menu.startMain": "menu.startMain",
+  "menu.continue": "menu.continue",
+  "menu.noSave": "menu.noSave",
+  "menu.exit": "menu.exit",
+  "menu.version": "menu.version",
+  "menu.hint": "menu.hint"
+}

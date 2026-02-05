@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "PLACEHOLDER_BG",
+      "type": "bg",
+      "path": "assets/placeholders/bg.svg",
+      "description": "占位背景图"
+    },
+    {
+      "id": "PLACEHOLDER_CHAR",
+      "type": "char",
+      "path": "assets/placeholders/char.svg",
+      "description": "占位角色图"
+    },
+    {
+      "id": "PLACEHOLDER_PROP",
+      "type": "prop",
+      "path": "assets/placeholders/prop.svg",
+      "description": "占位道具图"
+    }
+  ]
+}

@@ -1,0 +1,671 @@
+{
+  "$schema": "./language_registry_schema.json",
+  "version": "1.0.0",
+  "last_updated": "2026-02-05",
+  "languages": {
+    "schinese": {
+      "display_name": "简体中文",
+      "native_name": "简体中文",
+      "english_name": "Simplified Chinese",
+      "web_lang": "zh-CN",
+      "direction": "ltr",
+      "script": "Hans",
+      "font_family": "Noto Sans CJK SC",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "HSK",
+      "level_systems": {
+        "HSK": {
+          "levels": ["HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "HSK6"],
+          "internal_mapping": [1, 2, 4, 6, 8, 10]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "tchinese": {
+      "display_name": "繁體中文",
+      "native_name": "繁體中文",
+      "english_name": "Traditional Chinese",
+      "web_lang": "zh-TW",
+      "direction": "ltr",
+      "script": "Hant",
+      "font_family": "Noto Sans CJK TC",
+      "fallback": ["schinese", "english"],
+      "is_modern": true,
+      "default_level_system": "HSK",
+      "level_systems": {
+        "HSK": {
+          "levels": ["HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "HSK6"],
+          "internal_mapping": [1, 2, 4, 6, 8, 10]
+        }
+      }
+    },
+    "english": {
+      "display_name": "English",
+      "native_name": "English",
+      "english_name": "English",
+      "web_lang": "en",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": [],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        },
+        "IELTS": {
+          "levels": ["Band 3", "Band 4", "Band 5", "Band 6", "Band 7", "Band 8", "Band 9"],
+          "internal_mapping": [3, 5, 6, 7, 9, 11, 12]
+        }
+      }
+    },
+    "japanese": {
+      "display_name": "日本語",
+      "native_name": "日本語",
+      "english_name": "Japanese",
+      "web_lang": "ja",
+      "direction": "ltr",
+      "script": "Jpan",
+      "font_family": "Noto Sans CJK JP",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "JLPT",
+      "level_systems": {
+        "JLPT": {
+          "levels": ["N5", "N4", "N3", "N2", "N1"],
+          "internal_mapping": [1, 3, 5, 8, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "koreana": {
+      "display_name": "한국어",
+      "native_name": "한국어",
+      "english_name": "Korean",
+      "web_lang": "ko",
+      "direction": "ltr",
+      "script": "Kore",
+      "font_family": "Noto Sans CJK KR",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "TOPIK",
+      "level_systems": {
+        "TOPIK": {
+          "levels": ["TOPIK I-1", "TOPIK I-2", "TOPIK II-3", "TOPIK II-4", "TOPIK II-5", "TOPIK II-6"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "french": {
+      "display_name": "Français",
+      "native_name": "Français",
+      "english_name": "French",
+      "web_lang": "fr",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "DELF-DALF",
+      "level_systems": {
+        "DELF-DALF": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "german": {
+      "display_name": "Deutsch",
+      "native_name": "Deutsch",
+      "english_name": "German",
+      "web_lang": "de",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "Goethe",
+      "level_systems": {
+        "Goethe": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "spanish": {
+      "display_name": "Español (España)",
+      "native_name": "Español",
+      "english_name": "Spanish (Spain)",
+      "web_lang": "es-ES",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "DELE",
+      "level_systems": {
+        "DELE": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "latam": {
+      "display_name": "Español (Latinoamérica)",
+      "native_name": "Español (Latinoamérica)",
+      "english_name": "Spanish (Latin America)",
+      "web_lang": "es-419",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["spanish", "english"],
+      "is_modern": true,
+      "default_level_system": "DELE",
+      "level_systems": {
+        "DELE": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "brazilian": {
+      "display_name": "Português (Brasil)",
+      "native_name": "Português (Brasil)",
+      "english_name": "Portuguese (Brazil)",
+      "web_lang": "pt-BR",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["portuguese", "english"],
+      "is_modern": true,
+      "default_level_system": "Celpe-Bras",
+      "level_systems": {
+        "Celpe-Bras": {
+          "levels": ["Intermediário", "Intermediário Superior", "Avançado", "Avançado Superior"],
+          "internal_mapping": [5, 7, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "portuguese": {
+      "display_name": "Português (Portugal)",
+      "native_name": "Português",
+      "english_name": "Portuguese (Portugal)",
+      "web_lang": "pt-PT",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["brazilian", "english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "russian": {
+      "display_name": "Русский",
+      "native_name": "Русский",
+      "english_name": "Russian",
+      "web_lang": "ru",
+      "direction": "ltr",
+      "script": "Cyrl",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "TORFL",
+      "level_systems": {
+        "TORFL": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "italian": {
+      "display_name": "Italiano",
+      "native_name": "Italiano",
+      "english_name": "Italian",
+      "web_lang": "it",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CILS",
+      "level_systems": {
+        "CILS": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "dutch": {
+      "display_name": "Nederlands",
+      "native_name": "Nederlands",
+      "english_name": "Dutch",
+      "web_lang": "nl",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "polish": {
+      "display_name": "Polski",
+      "native_name": "Polski",
+      "english_name": "Polish",
+      "web_lang": "pl",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "turkish": {
+      "display_name": "Türkçe",
+      "native_name": "Türkçe",
+      "english_name": "Turkish",
+      "web_lang": "tr",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "thai": {
+      "display_name": "ไทย",
+      "native_name": "ไทย",
+      "english_name": "Thai",
+      "web_lang": "th",
+      "direction": "ltr",
+      "script": "Thai",
+      "font_family": "Noto Sans Thai",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "ACTFL",
+      "level_systems": {
+        "ACTFL": {
+          "levels": ["Novice Low", "Novice Mid", "Novice High", "Intermediate Low", "Intermediate Mid", "Intermediate High", "Advanced Low", "Advanced Mid", "Advanced High", "Superior"],
+          "internal_mapping": [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "vietnamese": {
+      "display_name": "Tiếng Việt",
+      "native_name": "Tiếng Việt",
+      "english_name": "Vietnamese",
+      "web_lang": "vi",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "indonesian": {
+      "display_name": "Bahasa Indonesia",
+      "native_name": "Bahasa Indonesia",
+      "english_name": "Indonesian",
+      "web_lang": "id",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "UKBI",
+      "level_systems": {
+        "UKBI": {
+          "levels": ["Dasar", "Menengah", "Lanjut", "Mahir"],
+          "internal_mapping": [3, 6, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "ukrainian": {
+      "display_name": "Українська",
+      "native_name": "Українська",
+      "english_name": "Ukrainian",
+      "web_lang": "uk",
+      "direction": "ltr",
+      "script": "Cyrl",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "czech": {
+      "display_name": "Čeština",
+      "native_name": "Čeština",
+      "english_name": "Czech",
+      "web_lang": "cs",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "hungarian": {
+      "display_name": "Magyar",
+      "native_name": "Magyar",
+      "english_name": "Hungarian",
+      "web_lang": "hu",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "romanian": {
+      "display_name": "Română",
+      "native_name": "Română",
+      "english_name": "Romanian",
+      "web_lang": "ro",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "bulgarian": {
+      "display_name": "Български",
+      "native_name": "Български",
+      "english_name": "Bulgarian",
+      "web_lang": "bg",
+      "direction": "ltr",
+      "script": "Cyrl",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "greek": {
+      "display_name": "Ελληνικά",
+      "native_name": "Ελληνικά",
+      "english_name": "Greek",
+      "web_lang": "el",
+      "direction": "ltr",
+      "script": "Grek",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "danish": {
+      "display_name": "Dansk",
+      "native_name": "Dansk",
+      "english_name": "Danish",
+      "web_lang": "da",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "finnish": {
+      "display_name": "Suomi",
+      "native_name": "Suomi",
+      "english_name": "Finnish",
+      "web_lang": "fi",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "norwegian": {
+      "display_name": "Norsk",
+      "native_name": "Norsk",
+      "english_name": "Norwegian",
+      "web_lang": "no",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "swedish": {
+      "display_name": "Svenska",
+      "native_name": "Svenska",
+      "english_name": "Swedish",
+      "web_lang": "sv",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Sans",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "CEFR",
+      "level_systems": {
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "arabic": {
+      "display_name": "العربية",
+      "native_name": "العربية",
+      "english_name": "Arabic",
+      "web_lang": "ar",
+      "direction": "rtl",
+      "script": "Arab",
+      "font_family": "Noto Naskh Arabic",
+      "fallback": ["english"],
+      "is_modern": true,
+      "default_level_system": "ACTFL",
+      "level_systems": {
+        "ACTFL": {
+          "levels": ["Novice Low", "Novice Mid", "Novice High", "Intermediate Low", "Intermediate Mid", "Intermediate High", "Advanced Low", "Advanced Mid", "Advanced High", "Superior"],
+          "internal_mapping": [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+        },
+        "CEFR": {
+          "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "hebrew_ancient": {
+      "display_name": "עברית עתיקה",
+      "native_name": "עברית עתיקה",
+      "english_name": "Ancient Hebrew",
+      "web_lang": "he-ancient",
+      "direction": "rtl",
+      "script": "Hebr",
+      "font_family": "Noto Sans Hebrew",
+      "fallback": ["english"],
+      "is_modern": false,
+      "is_ancient": true,
+      "default_level_system": "Course",
+      "level_systems": {
+        "Course": {
+          "levels": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "latin": {
+      "display_name": "Latina",
+      "native_name": "Latina",
+      "english_name": "Latin",
+      "web_lang": "la",
+      "direction": "ltr",
+      "script": "Latn",
+      "font_family": "Noto Serif",
+      "fallback": ["english"],
+      "is_modern": false,
+      "is_ancient": true,
+      "default_level_system": "Course",
+      "level_systems": {
+        "Course": {
+          "levels": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "greek_ancient": {
+      "display_name": "Ἑλληνική ἀρχαία",
+      "native_name": "Ἑλληνική ἀρχαία",
+      "english_name": "Ancient Greek",
+      "web_lang": "grc",
+      "direction": "ltr",
+      "script": "Grek",
+      "font_family": "Noto Serif",
+      "fallback": ["greek", "english"],
+      "is_modern": false,
+      "is_ancient": true,
+      "default_level_system": "Course",
+      "level_systems": {
+        "Course": {
+          "levels": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    },
+    "chinese_classical": {
+      "display_name": "文言文",
+      "native_name": "文言文",
+      "english_name": "Classical Chinese",
+      "web_lang": "lzh",
+      "direction": "ltr",
+      "script": "Hans",
+      "font_family": "Noto Serif CJK SC",
+      "fallback": ["schinese", "english"],
+      "is_modern": false,
+      "is_ancient": true,
+      "default_level_system": "Course",
+      "level_systems": {
+        "Course": {
+          "levels": ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6"],
+          "internal_mapping": [1, 3, 5, 7, 9, 11]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8vx9y2z3a4b5"]
+
+[ext_resource type="Script" path="res://src/investigation/ArchiveSealing.gd" id="1_archive"]
+
+[node name="ArchiveSealing" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_archive")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Archive and Seal"
+horizontal_alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Review collected evidence and write your conclusion. Select a seal type to finalize the archive."
+autowrap_mode = 3
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LeftPanel" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EvidenceLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/LeftPanel"]
+layout_mode = 2
+text = "Collected Evidence:"
+
+[node name="EvidenceList" type="ItemList" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/LeftPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RightPanel" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="ConclusionLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel"]
+layout_mode = 2
+text = "Conclusion:"
+
+[node name="ConclusionText" type="TextEdit" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Write your investigation conclusion here..."
+wrap_mode = 1
+
+[node name="SealTypeLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel"]
+layout_mode = 2
+text = "Seal Type:"
+
+[node name="SealTypeOption" type="OptionButton" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel"]
+layout_mode = 2
+
+[node name="SealButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel"]
+layout_mode = 2
+text = "Seal and Archive"
+
+[node name="StatusLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Ready to archive"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+

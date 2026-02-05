@@ -1,0 +1,60 @@
+{
+  "schinese": {
+    "word_001": {
+      "word": "皇帝",
+      "translation": "emperor",
+      "level": 1,
+      "context": "The emperor ruled the Ming Dynasty with absolute authority.",
+      "part_of_speech": "noun"
+    },
+    "word_002": {
+      "word": "大臣",
+      "translation": "minister",
+      "level": 1,
+      "context": "The minister advised the emperor on state affairs.",
+      "part_of_speech": "noun"
+    },
+    "word_003": {
+      "word": "宫殿",
+      "translation": "palace",
+      "level": 1,
+      "context": "The palace was the center of imperial power.",
+      "part_of_speech": "noun"
+    },
+    "word_004": {
+      "word": "朝廷",
+      "translation": "imperial court",
+      "level": 2,
+      "context": "The imperial court made important decisions.",
+      "part_of_speech": "noun"
+    },
+    "word_005": {
+      "word": "奏折",
+      "translation": "memorial",
+      "level": 2,
+      "context": "Officials submitted memorials to the emperor.",
+      "part_of_speech": "noun"
+    },
+    "word_006": {
+      "word": "御史",
+      "translation": "censor",
+      "level": 3,
+      "context": "The censor investigated official misconduct.",
+      "part_of_speech": "noun"
+    },
+    "word_007": {
+      "word": "科举",
+      "translation": "imperial examination",
+      "level": 3,
+      "context": "The imperial examination system selected officials.",
+      "part_of_speech": "noun"
+    },
+    "word_008": {
+      "word": "内阁",
+      "translation": "grand secretariat",
+      "level": 4,
+      "context": "The grand secretariat assisted the emperor.",
+      "part_of_speech": "noun"
+    }
+  }
+}

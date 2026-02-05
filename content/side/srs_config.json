@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "description": "SRS间隔重复系统配置",
+  "tiers": {
+    "apprentice": {
+      "newPerDay": 6,
+      "reviewPerDay": 14,
+      "description": "学徒级：初级玩家"
+    },
+    "adept": {
+      "newPerDay": 10,
+      "reviewPerDay": 20,
+      "description": "熟练级：进阶玩家"
+    },
+    "emissary": {
+      "newPerDay": 14,
+      "reviewPerDay": 26,
+      "description": "使者级：资深玩家"
+    },
+    "scribe": {
+      "newPerDay": 18,
+      "reviewPerDay": 32,
+      "description": "文书级：专家玩家"
+    }
+  }
+}

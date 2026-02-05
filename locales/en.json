@@ -1,0 +1,80 @@
+{
+  "language": {
+    "selectMode": "Select Learning Mode",
+    "monoMode": "Monolingual Mode",
+    "dualMode": "Bilingual Mode",
+    "selectLanguage": "Select Language",
+    "korean": "Korean",
+    "chinese": "Chinese",
+    "english": "English",
+    "japanese": "Japanese"
+  },
+  "ui": {
+    "appTitle": "Archive Detective",
+    "loading": "Loading...",
+    "continue": "Continue",
+    "save": "Save",
+    "load": "Load",
+    "settings": "Settings",
+    "back": "Back",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "menu": {
+    "subTitle": "Archive Detective",
+    "startMain": "Begin Main Case",
+    "continue": "Continue Case",
+    "startSide": "Archive Search",
+    "settings": "Settings & Rules",
+    "exit": "Exit",
+    "noSave": "No archived case to continue",
+    "motto": "Mysteries of the Wanli Court",
+    "version": "Demo v1.0",
+    "hint": "Press Enter or click [Begin Main Case] to start"
+  },
+  "actions": {
+    "investigate": "Investigate",
+    "talk": "Talk",
+    "think": "Think",
+    "examine": "Examine",
+    "question": "Question",
+    "present": "Present"
+  },
+  "system": {
+    "narrator": "Narrator",
+    "player": "Player",
+    "error": "Error",
+    "initFailed": "Initialization failed. Please refresh the page.",
+    "sceneLoadFailed": "Failed to load scene.",
+    "noContent": "No content available."
+  },
+  "permit": {
+    "apprentice": "Apprentice Translator",
+    "adept": "Adept Translator",
+    "emissary": "Emissary Translator",
+    "scribe": "Scribe Translator"
+  },
+  "placement": {
+    "title": "Seal Reading",
+    "description": "Assess your language proficiency by reading and understanding archive seals",
+    "start": "Start Assessment"
+  },
+  "system.narrator": "system.narrator",
+  "menu.startSide": "menu.startSide",
+  "system.noContent": "system.noContent",
+  "ui.hint": "ui.hint",
+  "menu.settings": "menu.settings",
+  "language.selectLanguage": "language.selectLanguage",
+  "language.chinese": "language.chinese",
+  "language.english": "language.english",
+  "language.korean": "language.korean",
+  "ui.close": "ui.close",
+  "menu.subTitle": "menu.subTitle",
+  "menu.startMain": "menu.startMain",
+  "menu.continue": "menu.continue",
+  "menu.noSave": "menu.noSave",
+  "menu.exit": "menu.exit",
+  "menu.version": "menu.version",
+  "menu.hint": "menu.hint"
+}

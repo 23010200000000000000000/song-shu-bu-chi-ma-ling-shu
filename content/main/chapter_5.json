@@ -1,0 +1,195 @@
+{
+  "chapter": 5,
+  "title": {
+    "english": "Chapter 5",
+    "schinese": "第5章"
+  },
+  "nodes": {
+    "CH5_START": {
+      "id": "CH5_START",
+      "type": "dialogue",
+      "speaker": "narrator",
+      "text": {
+        "english": "Chapter 5: The Investigation Begins\n\nYou are summoned to the palace to investigate a mysterious case.",
+        "schinese": "第5章：调查开始\n\n你被召入宫中调查一桩神秘案件。"
+      },
+      "next": "CH5_002",
+      "pov": "all",
+      "tags": [
+        "intro"
+      ]
+    },
+    "CH5_002": {
+      "id": "CH5_002",
+      "type": "dialogue",
+      "speaker": "narrator",
+      "text": {
+        "english": "Emperor's perspective: This is dialogue node 2 of chapter 5. The investigation continues.",
+        "schinese": "万历视角：这是第5章的第2个对话节点。调查继续进行。"
+      },
+      "next": "CH5_003",
+      "pov": "emperor",
+      "tags": [
+        "emperor_view"
+      ]
+    },
+    "CH5_003": {
+      "id": "CH5_003",
+      "type": "dialogue",
+      "speaker": "emperor",
+      "text": {
+        "english": "Emperor's perspective: This is dialogue node 3 of chapter 5. The investigation continues.",
+        "schinese": "万历视角：这是第5章的第3个对话节点。调查继续进行。"
+      },
+      "next": "CH5_004",
+      "pov": "emperor",
+      "tags": [
+        "emperor_view"
+      ]
+    },
+    "CH5_004": {
+      "id": "CH5_004",
+      "type": "dialogue",
+      "speaker": "narrator",
+      "text": {
+        "english": "Emperor's perspective: This is dialogue node 4 of chapter 5. The investigation continues.",
+        "schinese": "万历视角：这是第5章的第4个对话节点。调查继续进行。"
+      },
+      "next": "CH5_005",
+      "pov": "emperor",
+      "tags": [
+        "emperor_view"
+      ]
+    },
+    "CH5_005": {
+      "id": "CH5_005",
+      "type": "dialogue",
+      "speaker": "narrator",
+      "text": {
+        "english": "Emperor's perspective: This is dialogue node 5 of chapter 5. The investigation continues.",
+        "schinese": "万历视角：这是第5章的第5个对话节点。调查继续进行。"
+      },
+      "next": "CH5_CONSORT_001",
+      "pov": "emperor",
+      "tags": [
+        "emperor_view"
+      ]
+    },
+    "CH5_CONSORT_001": {
+      "id": "CH5_CONSORT_001",
+      "type": "dialogue",
+      "speaker": "narrator",
+      "text": {
+        "english": "Consort's perspective: Node 1. Different evidence emerges from this viewpoint.",
+        "schinese": "郑贵妃视角：节点1。从这个视角出现了不同的证据。"
+      },
+      "next": "CH5_CONSORT_002",
+      "pov": "consort",
+      "tags": [
+        "consort_view"
+      ]
+    },
+    "CH5_CONSORT_002": {
+      "id": "CH5_CONSORT_002",
+      "type": "dialogue",
+      "speaker": "consort",
+      "text": {
+        "english": "Consort's perspective: Node 2. Different evidence emerges from this viewpoint.",
+        "schinese": "郑贵妃视角：节点2。从这个视角出现了不同的证据。"
+      },
+      "next": "CH5_CONSORT_003",
+      "pov": "consort",
+      "tags": [
+        "consort_view"
+      ]
+    },
+    "CH5_CONSORT_003": {
+      "id": "CH5_CONSORT_003",
+      "type": "dialogue",
+      "speaker": "narrator",
+      "text": {
+        "english": "Consort's perspective: Node 3. Different evidence emerges from this viewpoint.",
+        "schinese": "郑贵妃视角：节点3。从这个视角出现了不同的证据。"
+      },
+      "next": "CH5_MINISTER_001",
+      "pov": "consort",
+      "tags": [
+        "consort_view"
+      ]
+    },
+    "CH5_MINISTER_001": {
+      "id": "CH5_MINISTER_001",
+      "type": "dialogue",
+      "speaker": "minister",
+      "text": {
+        "english": "Minister's perspective: Node 1. Bureaucratic details reveal the truth.",
+        "schinese": "申时行视角：节点1。官僚细节揭示真相。"
+      },
+      "next": "CH5_MINISTER_002",
+      "pov": "minister",
+      "tags": [
+        "minister_view"
+      ]
+    },
+    "CH5_MINISTER_002": {
+      "id": "CH5_MINISTER_002",
+      "type": "dialogue",
+      "speaker": "narrator",
+      "text": {
+        "english": "Minister's perspective: Node 2. Bureaucratic details reveal the truth.",
+        "schinese": "申时行视角：节点2。官僚细节揭示真相。"
+      },
+      "next": "CH5_MINISTER_003",
+      "pov": "minister",
+      "tags": [
+        "minister_view"
+      ]
+    },
+    "CH5_MINISTER_003": {
+      "id": "CH5_MINISTER_003",
+      "type": "dialogue",
+      "speaker": "minister",
+      "text": {
+        "english": "Minister's perspective: Node 3. Bureaucratic details reveal the truth.",
+        "schinese": "申时行视角：节点3。官僚细节揭示真相。"
+      },
+      "next": "CH5_INVESTIGATION",
+      "pov": "minister",
+      "tags": [
+        "minister_view"
+      ]
+    },
+    "CH5_INVESTIGATION": {
+      "id": "CH5_INVESTIGATION",
+      "type": "investigation",
+      "text": {
+        "english": "Time to compare the evidence from all three perspectives.",
+        "schinese": "是时候比对三个视角的证据了。"
+      },
+      "next": "CH5_END",
+      "pov": "all",
+      "tags": [
+        "investigation"
+      ]
+    },
+    "CH5_END": {
+      "id": "CH5_END",
+      "type": "chapter_end",
+      "text": {
+        "english": "End of Chapter 5\n\nYou have completed this chapter. The investigation continues...",
+        "schinese": "第5章结束\n\n你已完成本章。调查仍在继续..."
+      },
+      "next": "CH6_START",
+      "pov": "all",
+      "tags": [
+        "chapter_end"
+      ]
+    }
+  },
+  "metadata": {
+    "compiled_at": "2026-02-05T12:41:31.379652",
+    "compiler_version": "1.0.0",
+    "node_count": 13,
+    "source": "placeholder_generator"
+  }
+}

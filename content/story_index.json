@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "scenes": [
+    {
+      "sceneId": "DEMO_S01",
+      "file": "content/story/demo_s01.md",
+      "defaultBg": "PLACEHOLDER_BG"
+    }
+  ]
+}

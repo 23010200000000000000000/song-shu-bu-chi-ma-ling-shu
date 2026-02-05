@@ -1,0 +1,168 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7yxm8qwxm4zjk"]
+
+[ext_resource type="Script" path="res://src/story/StoryPlayer.gd" id="1_story"]
+
+[node name="StoryPlayer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_story")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.18, 0.15, 1)
+
+[node name="CharacterSprites" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogueBox" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -300.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DialogueBox/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="SpeakerName" type="Label" parent="DialogueBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Speaker Name"
+
+[node name="DialogueText" type="RichTextLabel" parent="DialogueBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "This is the dialogue text. It can be multiple lines and will wrap automatically."
+fit_content = true
+scroll_active = false
+
+[node name="ControlButtons" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -350.0
+offset_right = -40.0
+offset_bottom = -310.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 10
+alignment = 2
+
+[node name="AutoButton" type="Button" parent="ControlButtons"]
+custom_minimum_size = Vector2(80, 40)
+layout_mode = 2
+text = "Auto"
+
+[node name="SkipButton" type="Button" parent="ControlButtons"]
+custom_minimum_size = Vector2(80, 40)
+layout_mode = 2
+text = "Skip"
+
+[node name="BacklogButton" type="Button" parent="ControlButtons"]
+custom_minimum_size = Vector2(80, 40)
+layout_mode = 2
+text = "Log"
+
+[node name="MenuButton" type="Button" parent="ControlButtons"]
+custom_minimum_size = Vector2(80, 40)
+layout_mode = 2
+text = "Menu"
+
+[node name="PerspectiveButtons" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 20.0
+offset_right = 300.0
+offset_bottom = 80.0
+grow_horizontal = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="EmperorButton" type="Button" parent="PerspectiveButtons"]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 2
+text = "万历视角
+Emperor"
+
+[node name="ConsortButton" type="Button" parent="PerspectiveButtons"]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 2
+text = "郑贵妃视角
+Consort"
+
+[node name="MinisterButton" type="Button" parent="PerspectiveButtons"]
+custom_minimum_size = Vector2(180, 60)
+layout_mode = 2
+text = "申时行视角
+Minister"
+
+[node name="ChapterLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 50.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 18
+text = "Chapter 1"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="ControlButtons/AutoButton" to="." method="_on_auto_pressed"]
+[connection signal="pressed" from="ControlButtons/SkipButton" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="ControlButtons/BacklogButton" to="." method="_on_backlog_pressed"]
+[connection signal="pressed" from="ControlButtons/MenuButton" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="PerspectiveButtons/EmperorButton" to="." method="_on_emperor_pressed"]
+[connection signal="pressed" from="PerspectiveButtons/ConsortButton" to="." method="_on_consort_pressed"]
+[connection signal="pressed" from="PerspectiveButtons/MinisterButton" to="." method="_on_minister_pressed"]

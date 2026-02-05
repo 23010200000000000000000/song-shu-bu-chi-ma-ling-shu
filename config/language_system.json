@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "description": "语言学习系统配置 - 允许的语言与组合规则",
+  "allowedLanguages": [
+    {
+      "code": "zh",
+      "name": "汉语",
+      "nativeName": "汉语",
+      "fontFamily": "'Noto Serif SC', 'Source Han Serif SC', serif"
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "nativeName": "English",
+      "fontFamily": "'Noto Serif', 'Georgia', serif"
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "nativeName": "Français",
+      "fontFamily": "'Noto Serif', 'Georgia', serif"
+    },
+    {
+      "code": "ru",
+      "name": "Russian",
+      "nativeName": "Русский",
+      "fontFamily": "'Noto Serif', 'Georgia', serif"
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "nativeName": "Español",
+      "fontFamily": "'Noto Serif', 'Georgia', serif"
+    },
+    {
+      "code": "ar",
+      "name": "Arabic",
+      "nativeName": "العربية",
+      "fontFamily": "'Noto Naskh Arabic', 'Arial', sans-serif",
+      "rtl": true
+    },
+    {
+      "code": "ja",
+      "name": "Japanese",
+      "nativeName": "日本語",
+      "fontFamily": "'Noto Serif JP', 'Yu Mincho', serif"
+    },
+    {
+      "code": "de",
+      "name": "German",
+      "nativeName": "Deutsch",
+      "fontFamily": "'Noto Serif', 'Georgia', serif"
+    },
+    {
+      "code": "ko",
+      "name": "Korean",
+      "nativeName": "한국어",
+      "fontFamily": "'Noto Serif KR', 'Nanum Myeongjo', serif"
+    }
+  ],
+  "specialCombinations": [
+    {
+      "from": "zh",
+      "to": "wen",
+      "name": "文言文",
+      "description": "中文到文言文"
+    },
+    {
+      "from": "en",
+      "to": "la",
+      "name": "Latin",
+      "description": "英文到拉丁语"
+    },
+    {
+      "from": "fr",
+      "to": "la",
+      "name": "Latin",
+      "description": "法文到拉丁语"
+    },
+    {
+      "from": "de",
+      "to": "la",
+      "name": "Latin",
+      "description": "德文到拉丁语"
+    },
+    {
+      "from": "en",
+      "to": "grc",
+      "name": "Ancient Greek",
+      "description": "英文到古希腊语"
+    }
+  ],
+  "learningModes": {
+    "mono": {
+      "name": "单语模式",
+      "description": "专注学习一种语言",
+      "maxLanguages": 1
+    },
+    "dual": {
+      "name": "双语模式",
+      "description": "同时学习两种语言",
+      "maxLanguages": 2
+    }
+  },
+  "permitTiers": [
+    {
+      "id": "apprentice",
+      "name": "见习",
+      "displayName": "见习译官",
+      "level": 1,
+      "newPerDay": 6,
+      "reviewPerDay": 14
+    },
+    {
+      "id": "adept",
+      "name": "熟手",
+      "displayName": "熟手译官",
+      "level": 2,
+      "newPerDay": 10,
+      "reviewPerDay": 20
+    },
+    {
+      "id": "emissary",
+      "name": "密使",
+      "displayName": "密使译官",
+      "level": 3,
+      "newPerDay": 14,
+      "reviewPerDay": 26
+    },
+    {
+      "id": "scribe",
+      "name": "执笔",
+      "displayName": "执笔译官",
+      "level": 4,
+      "newPerDay": 18,
+      "reviewPerDay": 32
+    }
+  ],
+  "placement": {
+    "name": "能力评估",
+    "narrativeName": "封签审读",
+    "description": "通过阅读与理解档案封签，评估您的语言能力",
+    "testLanguageOnly": true,
+    "adaptiveDifficulty": true
+  },
+  "verification": {
+    "name": "核验",
+    "narrativeName": "译官核验",
+    "description": "定期核验语言掌握程度，确保能力维持",
+    "notTest": "这不是考试，而是剧情内的能力核验",
+    "testLanguageOnly": true,
+    "adaptiveDifficulty": true
+  }
+}

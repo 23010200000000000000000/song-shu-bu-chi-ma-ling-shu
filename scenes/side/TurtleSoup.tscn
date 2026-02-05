@@ -1,0 +1,116 @@
+[gd_scene load_steps=2 format=3 uid="uid://d9wx0y1z2a3b4"]
+
+[ext_resource type="Script" path="res://src/side/TurtleSoup.gd" id="1_turtle"]
+
+[node name="TurtleSoup" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_turtle")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TitleLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Turtle Soup Case"
+horizontal_alignment = 1
+
+[node name="DifficultyLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Difficulty: Medium"
+horizontal_alignment = 1
+
+[node name="ScenarioPanel" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ScenarioText" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/ScenarioPanel"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 100)
+bbcode_enabled = true
+fit_content = true
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LeftPanel" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QuestionsLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/LeftPanel"]
+layout_mode = 2
+text = "Available Questions:"
+
+[node name="QuestionList" type="ItemList" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/LeftPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RightPanel" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HistoryLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel"]
+layout_mode = 2
+text = "Question History:"
+
+[node name="HistoryScroll" type="ScrollContainer" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HistoryText" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer/HSplitContainer/RightPanel/HistoryScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = true
+
+[node name="BottomPanel" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HintButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/BottomPanel"]
+layout_mode = 2
+text = "Hint (0/2)"
+
+[node name="SolveButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/BottomPanel"]
+layout_mode = 2
+text = "Reveal Solution"
+
+[node name="Spacer" type="Control" parent="Panel/MarginContainer/VBoxContainer/BottomPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/BottomPanel"]
+layout_mode = 2
+text = "Back"
+
+[node name="StatusLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Turn: 0"
+horizontal_alignment = 1
+

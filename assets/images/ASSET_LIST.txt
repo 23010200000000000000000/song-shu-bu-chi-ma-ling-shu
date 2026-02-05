@@ -1,0 +1,31 @@
+# Placeholder Assets List
+# Generated: generate_placeholders.py
+# Total: 22 files
+
+## Backgrounds (4K, 16:9)
+- home_bg.png
+- chapter_1_bg.png
+- chapter_2_bg.png
+- chapter_3_bg.png
+- chapter_4_bg.png
+- chapter_5_bg.png
+- chapter_6_bg.png
+- chapter_7_bg.png
+- investigation_bg.png
+- archive_bg.png
+
+## Characters (Transparent PNG)
+- emperor_full.png
+- emperor_half.png
+- consort_full.png
+- consort_half.png
+- minister_full.png
+- minister_half.png
+
+## UI Elements
+- button_normal.png
+- button_hover.png
+- button_pressed.png
+- panel_bg.png
+- dialogue_box.png
+- evidence_card.png

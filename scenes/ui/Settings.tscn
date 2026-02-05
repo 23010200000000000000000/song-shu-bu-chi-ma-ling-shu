@@ -1,0 +1,127 @@
+[gd_scene load_steps=2 format=3 uid="uid://d8yxm9qwxm5zjl"]
+
+[ext_resource type="Script" path="res://src/ui/Settings.gd" id="1_settings"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_settings")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15, 0.12, 0.1, 1)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -400.0
+offset_right = 400.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LanguageLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Primary Language:"
+
+[node name="LanguageOption" type="OptionButton" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LanguageModeLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Language Mode:"
+
+[node name="LanguageModeOption" type="OptionButton" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="FontSizeLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Font Size:"
+
+[node name="FontSizeSlider" type="HSlider" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+min_value = 0.8
+max_value = 1.5
+step = 0.1
+value = 1.0
+
+[node name="Enable2_5DLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Enable 2.5D Scenes:"
+
+[node name="Enable2_5DCheck" type="CheckBox" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+button_pressed = true
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="QuizButton" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Start Vocabulary Quiz"
+
+[node name="Spacer" type="Control" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ApplyButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/ButtonContainer"]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+text = "Apply"
+
+[node name="BackButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/ButtonContainer"]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+text = "Back"
+
+[connection signal="item_selected" from="Panel/MarginContainer/VBoxContainer/LanguageOption" to="." method="_on_language_selected"]
+[connection signal="item_selected" from="Panel/MarginContainer/VBoxContainer/LanguageModeOption" to="." method="_on_language_mode_selected"]
+[connection signal="value_changed" from="Panel/MarginContainer/VBoxContainer/FontSizeSlider" to="." method="_on_font_size_changed"]
+[connection signal="toggled" from="Panel/MarginContainer/VBoxContainer/Enable2_5DCheck" to="." method="_on_2_5d_toggled"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/QuizButton" to="." method="_on_quiz_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/ButtonContainer/ApplyButton" to="." method="_on_apply_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/ButtonContainer/BackButton" to="." method="_on_back_pressed"]

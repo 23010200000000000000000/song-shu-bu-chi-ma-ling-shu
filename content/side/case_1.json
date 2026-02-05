@@ -1,0 +1,75 @@
+{
+  "case_id": "CASE_001",
+  "title": {
+    "english": "The Mystery of Case 1",
+    "schinese": "案件1之谜"
+  },
+  "difficulty": "medium",
+  "scenario": {
+    "english": "A mysterious event occurred in the palace. What really happened?",
+    "schinese": "宫中发生了一件神秘事件。究竟发生了什么？"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "text": {
+        "english": "Was anyone injured?",
+        "schinese": "有人受伤吗？"
+      },
+      "answer": "yes",
+      "unlocks": [
+        "Q002",
+        "Q003"
+      ]
+    },
+    {
+      "id": "Q002",
+      "text": {
+        "english": "Did it happen at night?",
+        "schinese": "是在夜间发生的吗？"
+      },
+      "answer": "no",
+      "unlocks": [
+        "Q004"
+      ]
+    },
+    {
+      "id": "Q003",
+      "text": {
+        "english": "Was it an accident?",
+        "schinese": "这是意外吗？"
+      },
+      "answer": "irrelevant",
+      "unlocks": []
+    },
+    {
+      "id": "Q004",
+      "text": {
+        "english": "Were there witnesses?",
+        "schinese": "有目击者吗？"
+      },
+      "answer": "yes",
+      "unlocks": [
+        "SOLUTION"
+      ]
+    }
+  ],
+  "solution": {
+    "english": "The truth was hidden in plain sight. The evidence reveals what really happened.",
+    "schinese": "真相就藏在眼前。证据揭示了真正发生的事情。"
+  },
+  "hints": [
+    {
+      "english": "Think about the timing of events.",
+      "schinese": "思考事件的时间顺序。"
+    },
+    {
+      "english": "Consider who had access to the location.",
+      "schinese": "考虑谁能进入现场。"
+    }
+  ],
+  "metadata": {
+    "compiled_at": "2026-02-05T12:41:31.395303",
+    "estimated_time": "10-15 minutes"
+  }
+}

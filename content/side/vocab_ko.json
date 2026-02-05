@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "language": "ko",
+  "description": "韩语词库 - 基础政务和推理术语",
+  "items": [
+    {
+      "id": "ko_001",
+      "term": "어사",
+      "definition": "御史 - 负责监察百官的官职",
+      "tags": ["官职", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_002",
+      "term": "태학부",
+      "definition": "太学府 - 古代最高学府",
+      "tags": ["机构", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_003",
+      "term": "금란전",
+      "definition": "金銮殿 - 皇帝议政的大殿",
+      "tags": ["地点", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_004",
+      "term": "금군",
+      "definition": "禁军 - 保卫皇宫的军队",
+      "tags": ["军事", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_005",
+      "term": "모역",
+      "definition": "谋逆 - 企图造反推翻朝廷",
+      "tags": ["罪名", "中级"],
+      "difficulty": 2
+    },
+    {
+      "id": "ko_006",
+      "term": "조사하다",
+      "definition": "调查 - 仔细查明事实",
+      "tags": ["动作", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_007",
+      "term": "심문하다",
+      "definition": "质询 - 询问证人或嫌疑人",
+      "tags": ["动作", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_008",
+      "term": "증거",
+      "definition": "证据 - 证明事实的材料",
+      "tags": ["推理", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_009",
+      "term": "범인",
+      "definition": "凶手 - 犯罪者",
+      "tags": ["推理", "基础"],
+      "difficulty": 1
+    },
+    {
+      "id": "ko_010",
+      "term": "진상",
+      "definition": "真相 - 事件的真实情况",
+      "tags": ["推理", "中级"],
+      "difficulty": 2
+    }
+  ]
+}

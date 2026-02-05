@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "compiled_at": "2026-02-05T12:41:31.395303",
+  "content": {
+    "main_chapters": 7,
+    "side_cases": 3,
+    "total_nodes": 91
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "main/chapter_1.json",
+      "nodes": 13
+    },
+    {
+      "chapter": 2,
+      "file": "main/chapter_2.json",
+      "nodes": 13
+    },
+    {
+      "chapter": 3,
+      "file": "main/chapter_3.json",
+      "nodes": 13
+    },
+    {
+      "chapter": 4,
+      "file": "main/chapter_4.json",
+      "nodes": 13
+    },
+    {
+      "chapter": 5,
+      "file": "main/chapter_5.json",
+      "nodes": 13
+    },
+    {
+      "chapter": 6,
+      "file": "main/chapter_6.json",
+      "nodes": 13
+    },
+    {
+      "chapter": 7,
+      "file": "main/chapter_7.json",
+      "nodes": 13
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "CASE_001",
+      "file": "side/case_1.json",
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "CASE_002",
+      "file": "side/case_2.json",
+      "difficulty": "medium"
+    },
+    {
+      "case_id": "CASE_003",
+      "file": "side/case_3.json",
+      "difficulty": "medium"
+    }
+  ]
+}

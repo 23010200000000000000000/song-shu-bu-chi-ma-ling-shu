@@ -1,0 +1,5 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" fill="#2d2520"/>
+  <rect x="10" y="10" width="108" height="108" fill="#e8e0d8" opacity="0.1"/>
+  <text x="64" y="74" font-family="serif" font-size="48" fill="#e8e0d8" text-anchor="middle">朱</text>
+</svg>

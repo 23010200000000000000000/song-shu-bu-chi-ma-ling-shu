@@ -1,0 +1,42 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+  <!-- 纸签按钮 - 默认状态 -->
+  <defs>
+    <filter id="paper-tag">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4"/>
+      <feDiffuseLighting lighting-color="white" surfaceScale="1">
+        <feDistantLight azimuth="45" elevation="60"/>
+      </feDiffuseLighting>
+    </filter>
+    <filter id="tag-shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="1" dy="2"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 阴影 -->
+  <path d="M 10 5 L 190 5 L 195 10 L 195 70 L 190 75 L 10 75 L 5 70 L 5 10 Z" fill="black" opacity="0.2" filter="url(#tag-shadow)"/>
+
+  <!-- 主体 - 宣纸色 -->
+  <path d="M 8 3 L 188 3 L 193 8 L 193 68 L 188 73 L 8 73 L 3 68 L 3 8 Z" fill="#F5F5DC" opacity="0.95"/>
+
+  <!-- 纹理 -->
+  <path d="M 8 3 L 188 3 L 193 8 L 193 68 L 188 73 L 8 73 L 3 68 L 3 8 Z" fill="white" opacity="0.05" filter="url(#paper-tag)"/>
+
+  <!-- 边框 -->
+  <path d="M 8 3 L 188 3 L 193 8 L 193 68 L 188 73 L 8 73 L 3 68 L 3 8 Z" fill="none" stroke="#8B7355" stroke-width="1" opacity="0.5"/>
+
+  <!-- 右侧突出部分（可拉动感） -->
+  <rect x="185" y="35" width="10" height="10" rx="1" fill="#D4C5B0" opacity="0.8"/>
+
+  <!-- 占位文字 -->
+  <text x="100" y="43" font-family="serif" font-size="14" fill="#3C3C3C" opacity="0.6" text-anchor="middle">
+    纸签按钮
+  </text>
+</svg>

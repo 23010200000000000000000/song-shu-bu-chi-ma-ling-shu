@@ -1,0 +1,38 @@
+<svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+  <!-- 纸签按钮 - 悬停状态（朱砂边框） -->
+  <defs>
+    <filter id="paper-tag-hover">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4"/>
+      <feDiffuseLighting lighting-color="white" surfaceScale="1">
+        <feDistantLight azimuth="45" elevation="60"/>
+      </feDiffuseLighting>
+    </filter>
+    <filter id="glow-hover">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 发光效果 -->
+  <path d="M 8 3 L 188 3 L 193 8 L 193 68 L 188 73 L 8 73 L 3 68 L 3 8 Z" fill="#C8553D" opacity="0.15" filter="url(#glow-hover)"/>
+
+  <!-- 主体 - 宣纸色 -->
+  <path d="M 8 3 L 188 3 L 193 8 L 193 68 L 188 73 L 8 73 L 3 68 L 3 8 Z" fill="#F5F5DC" opacity="0.98"/>
+
+  <!-- 纹理 -->
+  <path d="M 8 3 L 188 3 L 193 8 L 193 68 L 188 73 L 8 73 L 3 68 L 3 8 Z" fill="white" opacity="0.05" filter="url(#paper-tag-hover)"/>
+
+  <!-- 朱砂边框 -->
+  <path d="M 8 3 L 188 3 L 193 8 L 193 68 L 188 73 L 8 73 L 3 68 L 3 8 Z" fill="none" stroke="#C8553D" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- 右侧突出部分 -->
+  <rect x="185" y="35" width="10" height="10" rx="1" fill="#C8553D" opacity="0.3"/>
+
+  <!-- 占位文字 -->
+  <text x="100" y="43" font-family="serif" font-size="14" fill="#3C3C3C" opacity="0.7" text-anchor="middle">
+    纸签悬停
+  </text>
+</svg>

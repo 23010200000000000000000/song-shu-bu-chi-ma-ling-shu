@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://f1xy2z3a4b5c6"]
+
+[ext_resource type="Script" path="res://src/learning/VocabularyQuiz.gd" id="1_quiz"]
+
+[node name="VocabularyQuiz" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_quiz")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="QuestionLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "What is the meaning of this word?"
+horizontal_alignment = 1
+
+[node name="WordPanel" type="PanelContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="WordLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/WordPanel"]
+layout_mode = 2
+text = "皇帝"
+horizontal_alignment = 1
+
+[node name="ContextLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Context: The emperor ruled the Ming Dynasty."
+autowrap_mode = 3
+horizontal_alignment = 1
+
+[node name="OptionsContainer" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+
+[node name="Option1" type="Button" parent="Panel/MarginContainer/VBoxContainer/OptionsContainer"]
+layout_mode = 2
+text = "emperor"
+
+[node name="Option2" type="Button" parent="Panel/MarginContainer/VBoxContainer/OptionsContainer"]
+layout_mode = 2
+text = "minister"
+
+[node name="Option3" type="Button" parent="Panel/MarginContainer/VBoxContainer/OptionsContainer"]
+layout_mode = 2
+text = "palace"
+
+[node name="Option4" type="Button" parent="Panel/MarginContainer/VBoxContainer/OptionsContainer"]
+layout_mode = 2
+text = "dynasty"
+
+[node name="ResultLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Correct!"
+horizontal_alignment = 1
+
+[node name="StatsLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Level: HSK1 | Score: 0/0 (0%)"
+horizontal_alignment = 1
+
+[node name="ButtonPanel" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="NextButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/ButtonPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Next Question"
+
+[node name="BackButton" type="Button" parent="Panel/MarginContainer/VBoxContainer/ButtonPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back"
+
